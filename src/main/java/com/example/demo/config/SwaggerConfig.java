@@ -1,3 +1,5 @@
+
+
 package com.example.demo.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
@@ -7,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.List;
 
 @Configuration
-public class swaggerconfiguration {
+public class SwaggerConfig {
 
     @Bean
     public OpenAPI customOpenAPI() {

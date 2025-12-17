@@ -1,3 +1,5 @@
+
+
 package com.example.demo.service;
 
 import java.util.List;
@@ -10,16 +12,17 @@ import com.example.demo.repository.LocationRepository;
 
 @Service
 public class LocationServiceImpl implements LocationService {
+
     @Autowired
-    private LocationRepository locationRepo;
+    private LocationRepository locationRepository;
 
     @Override
     public LocationEntity createlocation(LocationEntity le) {
-        return locationRepo.save(le);
+        return locationRepository.save(le);
     }
 
     @Override
     public List<LocationEntity> getalllocation() {
-        return locationRepo.findAll();
+        return locationRepository.findAll();
     }
 }
